@@ -38,7 +38,7 @@ function App (){
     return(
         <main>
             <section className="container">
-                <h3>Today is:</h3>
+                <h3>Today is: {new Date().toLocaleDateString("hr")}</h3>
                 <h3>There are {people.length} birthdays today</h3>
                 {people.map(loopPeople)}
                 <button className="all-btn" onClick={deleteAll}>Clear all</button>
