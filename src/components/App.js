@@ -10,23 +10,29 @@ function App (){
     function loopPeople(person){
         return(
             <List 
+                key = {person.id}
+                id = {person.id} 
                 img = {person.image}
                 fullName = {person.name}
                 years = {person.age}
                 onDelete = {deletePerson}
+
             />
         )
-    }
+    };
 
-    function deleteAll (people){
+    function deleteAll (){
         return (
             setPeople([])
         )
     }
+    
 
-    function deletePerson (){
-        
+    function deletePerson(id){
+        const newPpl = people.filter((person) => person.id !== id);
+        setPeople(newPpl);
     }
+        
 
 
     return(
