@@ -34,6 +34,13 @@
       image:
         'https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883334/person-1_rfzshl.jpg',
     },
+    {
+      id:6,
+      name: "Kristina Bruketa",
+      age: 38,
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEa5Vs6eFY8Nk1V0w5sf1vIfKY4w8Y2uT6rNvmIdJqDA&s"
+
+    }
   ];
 
   export default data;
